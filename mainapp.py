@@ -5,7 +5,6 @@ from Fronend.functions import *
 
 window = sg.Window('Tasks', main_layout)
 
-
 while True:
     event, values = window.read()
     if event == 'Exit' or event == sg.WINDOW_CLOSED:
@@ -13,6 +12,10 @@ while True:
     elif event == 'Delete Task':
         delete_task(values)
         session.commit()
+    elif event == 'Add Task':
+        add_task_window()
+    
+
 
 
 session.close()
