@@ -1,6 +1,6 @@
-from backend import Task
-from config import session, sg
-from Fronend.layouts import main_layout
+from backend import *
+from config import *
+from Fronend.layouts import *
 from Fronend.functions import *
 
 window = sg.Window('Tasks', main_layout)
@@ -17,3 +17,4 @@ while True:
 
 session.close()
 window.close()
+

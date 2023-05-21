@@ -1,5 +1,5 @@
-from backend import Task
-from config import session, sg
+from backend import *
+from config import *
 
 
 headers = ['ID', 'Task Name', 'Start Date', 'Finish Date', 'Status']
